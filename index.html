@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mom's Alterations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Main Menu Section -->
+    <nav class = "mainmenu">
+      <div class="mainmenu__container">
+        <a href="#home" id="mainmenu__logo">Mom's Alterations</a>
+        <div class="mainmenu__toggle" id="mobile-menu">
+          <span class="bar"></span> 
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      <ul class="mainmenu__select">
+        <li class="mainmenu__item">
+          <a href="#home" class="mainmenu__links" id="home-page">Home</a>
+        </li>
+        <li class="mainmenu__item">
+          <a href="#services" class="mainmenu__links" id="services-page">Services</a>
+        </li>
+        <li class="mainmenu__item">
+          <a href="#contact" class="mainmenu__links" id="contact-page">Contact Us</a>
+        </li>
+        </div>
+      </ul>
+      </div>
+    </nav>
+    <!-- Base Section -->
+    <div class="base" id="home">
+      <div class="wrapper">
+        <img id="storefront" src="images/momsstorefront.jpg" alt="Mom's Alterations Storefront">
+        <div class="text-box">
+          <h2>Serving Arlington Since 1988</h2>
+          <p>Mom's Alterations is a family owned business that has been serving Arlington for more than 30 years. 
+            Located next to Arlington High School, Mom's handles all types of alteration services from wedding dresses to sewing patches. We pride ourselves on our fair pricing, quality work, and fast workspeed. Come in today to get altered quick and easy! We accept walk-ins.</p>
+          <h3>Visit Us:</h3>
+          <p>616 W Park Row Dr, Arlington, TX 76010</p>
+          <h3>Call Us:</h3>
+          <p>(817) 861-1500</p>
+          <h3>Our Hours:</h3>
+          <p>Mon-Fri: 9am - 6pm</p>
+          <p>Sat: 10am - 5pm</p>
+          <p>Sun: Closed</p>
+        </div>  
+      </div> 
+    </div>
+    <!-- Services Section -->
+    <div class ="middle" id="services">
+      <div class="middle-container">
+        <img id="picturewall" src="images/momspicturewall.jpg" alt="Mom's Alterations Wall of Customers">
+        <div class="text-box">
+          <h2>Wedding, Formal, Casual, or Athletic-- We Do It All!</h2>
+          <p>At Mom's, we strive to meet all your alteration needs. We can adjust your everday pants, shirts, dresses, blouses, skirts, and shorts; 
+            we can sew on patches and cloth; we can fix tears and holes; we can do prom dresses, suits, tuxedos, wedding dresses and more! 
+            Not sure if we can do it? Come on in for a consultation, completely free of charge! We'll take a look at what you have and assess if we can provide you 
+            a satisfactory service.<br><br>
+          </p>
+          <h2>Why Us?</h2>
+          <p>Founded by the late Ejhdes Niereki in 1988, we've been serving the city of Arlington over three decades. The secret to keeping our business stable is simple: 
+            we love our customers. We are passionate about we do, focusing on not just delivering a great service, but also connecting with our customers. Being able to understand 
+            our customers motivates us to continue delivering the best service we can. Our walls are decorated with signed portraits of satisfied clients throughout the years, 
+            serving as a reminder of why we do what we do.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <div class = "contact-section" id="contact">
+      <img id="fittingrooms" src="images/momsfittingrooms.jpg" alt="Mom's Alterations Fitting Rooms">
+      <div class="email-form">
+        <h1>Have Inquiries? Reach Out To Us!</h1>
+        <form action="https://formsubmit.co/momsalterationsarlington@gmail.com" method="POST">
+          <input type="text" name="Name" placeholder="Full Name" required>
+          <input types="email" name="Email" placeholder="Email" required>
+          <textarea name="Message" placeholder="Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- Google Map -->
+    <div class="map-container">
+      <div class = "google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.732240208028!2d-97.11644062386493!3d32.719742086909974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7d6aa889a5ff%3A0xad5e2d94d47bb311!2sMom&#39;s%20Alterations!5e0!3m2!1sen!2sus!4v1723680441792!5m2!1sen!2sus" width="600" height="400" style="border:25;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class = "end">
+      <div class ="end-container">
+        <div class="footer-heading footer1">
+          <h2>Schedule</h2>
+          <p>Mon-Fri: 9am - 6pm</p>
+          <p>Sat: 10am - 5pm</p>
+          <p>Sun: Closed</p>
+        </div>
+        <div class="footer-heading footer2">
+          <h2>Address</h2>
+          <p>616 W Park Row Dr, Arlington, TX 76010</p>
+        </div>
+        <div class="footer-heading footer3">
+          <h2>Contact Us</h2>
+          <p>(817) 861-1500</p>
+          <p>momsalterationsarlington@gmail.com</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 1988 Mom's Alterations | All Rights Reserved</p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

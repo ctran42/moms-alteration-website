@@ -1,0 +1,356 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.mainmenu {
+  background: #ff9797;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.mainmenu__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+#mainmenu__logo {
+  background-color: black;
+
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.mainmenu__select {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.mainmenu__item {
+  height: 80px;
+}
+
+.mainmenu__links {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  text-decoration: none;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.mainmenu__links:hover {
+  color: #888888;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 960px) {
+  .mainmenu__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
+
+  .mainmenu__select {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+
+  .mainmenu__select.active {
+    background: #ff9797;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 60vh;
+    font-size: 1.6rem;
+  }
+
+  #mainmenu__logo {
+    padding-left: 25px;
+  }
+
+  .mainmenu__toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #ffffff;
+  }
+
+  .mainmenu__item {
+    width: 100%;
+  }
+
+  .mainmenu__links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .navbar__btn {
+    padding-bottom: 2rem;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    margin: 0;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  .mainmenu__toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* Main Section */
+
+.base {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+
+.wrapper {
+  margin: 50px auto;
+  width: 70%;
+}
+
+#storefront {
+  max-width: 750px;
+  border-radius: 8px;
+  float: left;
+  margin-right: 30px;
+  margin-left: -15px;
+}
+
+.text-box {
+  color:black;
+}
+
+.text-box h2 {
+  font-size: 42px;
+}
+
+.text-box p {
+  font-size: 18px;
+}
+
+.text-box h3 {
+  margin-top: .5em;
+}
+
+.middle {
+  background: #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+
+#picturewall {
+  max-width: 750px;
+  border-radius: 8px;
+  float: right;
+  margin-left: 30px;
+  margin-right: -15px;
+}
+
+.middle-container {
+  margin-top: 100px;
+  margin: 50px auto;
+  width: 70%;
+}
+
+.contact-section {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#fittingrooms {
+  max-width: 750px;
+  border-radius: 8px;
+  float: left;
+  margin-right: 50px;
+  margin-left: -15px;
+}
+
+@media screen and (max-width: 1420px) {
+  #fittingrooms {
+    display: none;
+  }
+}
+
+.email-form h1{
+  margin-bottom: 1.5rem;
+}
+
+.email-form form {
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  gap: 1rem;
+}
+
+.email-form input, select, textarea {
+  padding: 1.4rem;
+  background: white;
+  border: 1px solid black;
+}
+
+.email-form textarea {
+  flex-direction: row;
+  height: 15rem;
+}
+
+.email-form button {
+  width: 8rem;
+  padding: 1rem;
+  cursor: pointer;
+  background:#ececec;
+  color: black;
+}
+
+.map-container {
+  min-height: 10vh;
+  margin-bottom: 300px;
+}
+
+.google-map {
+  position: relative;
+}
+
+.google-map iframe {
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.end {
+  background: #ff9797;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+
+.end-container {
+  width: 80%;
+  height: 15vh;
+  background-color: #ff9797;
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right:4rem;
+}
+
+.footer-heading h2 {
+  margin-bottom: 2rem;
+}
+
+.footer-heading p {
+  margin-bottom: 0.5rem;
+}
+
+.copyright {
+  text-align: center;
+  color: black;
+}
+
+@media screen and (max-width: 1150px) {
+  .footer {
+    height: 50vh;
+  }
+  .footer1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .footer {
+    padding-top: 2rem;
+  }
+  .footer1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .footer1, .footer2 {
+    display: none;
+  }
+}
